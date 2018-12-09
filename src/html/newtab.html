@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/main.css">
+	<title>New Tab</title>
+</head>
+
+<body>
+	<div id="root">
+		<div id="murlin">
+			<div class="urlcontainer">
+				<p>https://</p>
+				<input type="text" id="subdomain" placeholder="subdomain">
+				<p>.</p>
+				<input type="text" id="domain" placeholder="domain.com">
+				<p>/</p>
+				<select id="recordtype">
+					<option value="none" class="opt" selected>none</option>
+					<option value="contact" class="opt">contact</option>
+					<option value="campaign" class="opt">campaign</option>
+					<option value="order" class="opt">order</option>
+					<option value="orderform" class="opt">order form</option>
+					<option value="batch" class="opt">batch</option>
+				</select>
+				<p>/</p>
+				<input type="text" id="record" placeholder="record (id)">
+				<button id="save">Save as template</button>
+			</div>
+		</div>
+	</div>
+	<script src="/js/main.js"></script>
+</body>
+
+</html>
