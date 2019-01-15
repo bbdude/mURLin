@@ -1,9 +1,10 @@
 {
-	"manifest_version": 3,
+	"manifest_version": 2,
 	"name": "wURLin",
 	"short_name": "wURLin",
 	"description": "Was mearl's URL Input but now it's Jacob.",
-	"version": "0.2.41",
+	"icons": { "16": "icon16.png"},
+	"version": "0.0.3",
 	"author": "Jacob <chrome@iigniteus.com>",
 	"incognito": "split",
 	"chrome_url_overrides": {
