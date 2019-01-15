@@ -117,6 +117,32 @@ var Murlin = (function() {
 		}
 		window.location.href = url;
 	};
+	
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+		  content.style.display = "none";
+		} else {
+		  content.style.display = "block";
+		}
+		for (var ii = 0; ii < 10; ii++)
+		{
+			content = content.nextElementSibling;
+			if (content == null)
+				return;
+			else if (content.style.display === "block") {
+			  content.style.display = "none";
+			} else {
+			  content.style.display = "block";
+			}
+		}
+	  });
+	}
 
 	return app;
 })(window);
