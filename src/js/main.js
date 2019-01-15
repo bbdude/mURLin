@@ -1,5 +1,5 @@
 
-var Murlin = (function() {
+var Wurlin = (function() {
 	var app = {},
 		template = {};
 
@@ -148,5 +148,5 @@ var Murlin = (function() {
 })(window);
 
 window.onload = function() {
-	Murlin.init();
+	Wurlin.init();
 };

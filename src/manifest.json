@@ -1,10 +1,10 @@
 {
-	"manifest_version": 2,
-	"name": "mURLin",
-	"short_name": "mURLin",
-	"description": "Mearl's URL Input",
+	"manifest_version": 3,
+	"name": "wURLin",
+	"short_name": "wURLin",
+	"description": "Was mearl's URL Input but now it's Jacob.",
 	"version": "0.2.41",
-	"author": "MEarl <michael@michaelearl.me>",
+	"author": "Jacob <chrome@iigniteus.com>",
 	"incognito": "split",
 	"chrome_url_overrides": {
 		"newtab": "html/newtab.html"
