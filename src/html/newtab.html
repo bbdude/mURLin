@@ -1,151 +1,166 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/css/main.css">
-	<title>New Tab</title>
-</head>
-
-<body>
-	<div id="root">
-		<div id="wurlin">
-			<div class="urlcontainer">
-				<p>https://</p>
-				<input type="text" id="subdomain" placeholder="subdomain">
-				<p>.</p>
-				<input type="text" id="domain" placeholder="domain.com">
-				<p>/</p>
-				<select id="recordtype">
-					<option value="none" class="opt" selected>none</option>
-					<option value="contact" class="opt">contact</option>
-					<option value="campaign" class="opt">campaign</option>
-					<option value="order" class="opt">order</option>
-					<option value="orderform" class="opt">order form</option>
-					<option value="batch" class="opt">batch</option>
-				</select>
-				<p>/</p>
-				<input type="text" id="record" placeholder="record (id)">
-				<button id="save">Save as template</button>
-			</div>
-		</div>
-	</div>
-	<br><br>
-	<div class="row" style="display: flex; justify-content: space-between;">
-		<div class="column green">
-		<a href="https://classic-infusionsoft.knowledgeowl.com">
-			<div style="justify-content: center;display: flex;"><img src="http://partnerlinkhub.com/wp-content/uploads/2018/04/Infusionsoft-Icon-Transparent-2.png" width="47" height="57.3" alt=""></div>
-		    <h2 style="color:#ffffff;display: inline-block;">Help Center</h2><br>
-			   For some classic assistance
-	    </a>
-		</div>
-		<div class="column">
-		<a href="https://new-infusionsoft.knowledgeowl.com">
-		   <div style="justify-content: center;display: flex;"><img src="http://partnerlinkhub.com/wp-content/uploads/2018/04/is-2018-cornerstone-white.png" width="35" height="57.3" alt=""></div>
-		   <h2 style="color:#ffffff;display: inline-block;">New Help Center</h2><br>
-			   If you really want to
-	    </a>
-		</div>
-		<div class="column purple">
-		<a href="http://partnerlinkhub.com/">
-			<div style="justify-content: center;display: flex;"><img src="http://partnerlinkhub.com/wp-content/uploads/2018/05/is-2018-cornerstone-blue.png" width="35" height="57.3" alt="" style="transform: rotate(90deg)"></div>
-		    <h2 style="color:#ffffff;display: inline-block;">Partner Portal</h2><br>
-			   For you fancy peeps
-	    </a>
-		</div>
-		<div class="column blu-ush">
-		<a href="https://a1.maillog:8000">
-			<div style="justify-content: center;display: flex; padding-top:15px;"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Splunk_logo.png" width="100" height="40" alt="" style=""></div>
-		    <h2 style="color:#ffffff;display: inline-block;">Mail Logs</h2><br>
-			   Something funny
-	    </a>
-		</div>
-	</div>
-	<div class="row">
-		<button class="collapsible">ASR Scripts</button>
-			<div class="content subcontent">
-				<button class="collapsible subcollapsible">Question Script</button>
-					<div class="content">
-					<p>
-					App name:
-					<br><br>
-					Build #:
-					<br><br>
-					User experiencing problem:
-					<br><br>
-					Browser/Version:
-					<br><br>
-					Clear and concise description of the problem:
-					<br><br>
-					What is your question?
-					<br><br>
-					Can you duplicate this in your personal application? (Appname/s , Yes / No)
-					<br><br>
-					EXAMPLES (Name and ID):
-					</p>
-					</div>
-			</div>
-		<div class="content subcontent">
-			<button class="collapsible subcollapsible">Bug Script</button>
-				<div class="content subcontent">
-					<p>
-					App name:
-					<br><br>
-					Build #:
-					<br><br>
-					User experiencing problem:
-					<br><br>
-					Browser/Version:
-					<br><br>
-					Clear and concise description of the problem:
-					<br><br>
-					What steps have you taken to troubleshoot (provide examples/id’s):
-					<br><br>
-					Can you duplicate this in your personal application? (Appname/s , Yes / No)
-					<br><br>
-					Duplication steps In Application:
-					</p>
-				</div>
-		</div>
-		<div class="content subcontent">
-			<button class="collapsible subcollapsible">Email Escalation</button>
-				<div class="content subcontent">
-					<p>
-					App name:
-					<br><br>
-					Details of issue:
-					<br><br>
-					When did it first occur?:
-					<br><br>
-					Is it happening to specific domains? Which ones?:
-					<br><br>
-					Explanation of troubleshooting steps taken so far:
-					<br><br>
-					What specific bounce or block messages were found?:
-					<br><br>
-					Provide at least 3 contact examples:
-					</p>
-				</div>
-		</div>
-	</div>
-	<div class="row">
-		<button class="collapsible">Note Script</button>
-			<div class="content subcontent">
-				<p>
-				Customer Concern: 
-				<br><br>
-				Additional Questions: 
-				<br><br>
-				Examples: 
-				<br><br>
-				Steps to resolve: 
-				<br><br>
-				Resolution provided: 
-				</p>
-			</div>
-	</div>
-	<script src="/js/main.js"></script>
-</body>
-
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/css/main.css">
+      <title>New Tab</title>
+   </head>
+   <body>
+      <div id="root">
+         <div id="wurlin">
+            <div class="urlcontainer">
+               <p>https://</p>
+               <input type="text" id="subdomain" placeholder="subdomain">
+               <p>.</p>
+               <input type="text" id="domain" placeholder="domain.com">
+               <p>/</p>
+               <select id="recordtype">
+                  <option value="none" class="opt" selected>none</option>
+                  <option value="contact" class="opt">contact</option>
+                  <option value="campaign" class="opt">campaign</option>
+                  <option value="order" class="opt">order</option>
+                  <option value="orderform" class="opt">order form</option>
+                  <option value="batch" class="opt">batch</option>
+               </select>
+               <p>/</p>
+               <input type="text" id="record" placeholder="record (id)">
+               <button id="save">Save as template</button>
+            </div>
+         </div>
+      </div>
+      <br><br>
+      <div class="row" style="display: flex; justify-content: space-between;">
+         <div class="column green">
+            <a href="https://classic-infusionsoft.knowledgeowl.com">
+               <div class="columncontent"><img src="http://partnerlinkhub.com/wp-content/uploads/2018/04/Infusionsoft-Icon-Transparent-2.png" width="47" height="57.3" alt=""></div>
+               <h2 style="color:#ffffff;display: inline-block;">Help Center</h2>
+               <br>
+               For some classic assistance
+            </a>
+         </div>
+         <div class="column">
+            <a href="https://new-infusionsoft.knowledgeowl.com">
+               <div class="columncontent"><img src="http://partnerlinkhub.com/wp-content/uploads/2018/04/is-2018-cornerstone-white.png" width="35" height="57.3" alt=""></div>
+               <h2 style="color:#ffffff;display: inline-block;">New Help Center</h2>
+               <br>
+               If you really want to
+            </a>
+         </div>
+         <div class="column purple">
+            <a href="http://partnerlinkhub.com/">
+               <div class="columncontent"><img src="http://partnerlinkhub.com/wp-content/uploads/2018/05/is-2018-cornerstone-blue.png" width="35" height="57.3" alt="" style="transform: rotate(90deg)"></div>
+               <h2 style="color:#ffffff;display: inline-block;">Partner Portal</h2>
+               <br>
+               For you fancy peeps
+            </a>
+         </div>
+         <div class="column blu-ush">
+            <a href="https://a1.maillog:8000">
+               <div class="columncontent"style=" padding-top:15px;"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Splunk_logo.png" width="100" height="40" alt="" style=""></div>
+               <h2 style="color:#ffffff;display: inline-block;">Mail Logs</h2>
+               <br>
+               Something funny
+            </a>
+         </div>
+      </div>
+      <div class="row">
+         <button class="collapsible">ASR Scripts</button>
+         <div class="content subcontent">
+            <button class="collapsible subcollapsible">↳Question Script</button>
+            <div class="content subcontent">
+			  App name:
+			  <br><br>
+			  Build #:
+			  <br><br>
+			  User experiencing problem:
+			  <br><br>
+			  Browser/Version:
+			  <br><br>
+			  Clear and concise description of the problem:
+			  <br><br>
+			  What is your question?
+			  <br><br>
+			  Can you duplicate this in your personal application? (Appname/s , Yes / No)
+			  <br><br>
+			  EXAMPLES (Name and ID):
+            </div>
+         </div>
+         <div class="content subcontent">
+            <button class="collapsible subcollapsible">↳Bug Script</button>
+            <div class="content subcontent">
+			  App name:
+			  <br><br>
+			  Build #:
+			  <br><br>
+			  User experiencing problem:
+			  <br><br>
+			  Browser/Version:
+			  <br><br>
+			  Clear and concise description of the problem:
+			  <br><br>
+			  What steps have you taken to troubleshoot (provide examples/id’s):
+			  <br><br>
+			  Can you duplicate this in your personal application? (Appname/s , Yes / No)
+			  <br><br>
+			  Duplication steps In Application:
+            </div>
+         </div>
+         <div class="content subcontent">
+            <button class="collapsible subcollapsible">↳Email Escalation</button>
+            <div class="content subcontent">
+			  App name:
+			  <br><br>
+			  Details of issue:
+			  <br><br>
+			  When did it first occur?:
+			  <br><br>
+			  Is it happening to specific domains? Which ones?:
+			  <br><br>
+			  Explanation of troubleshooting steps taken so far:
+			  <br><br>
+			  What specific bounce or block messages were found?:
+			  <br><br>
+			  Provide at least 3 contact examples:
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <button class="collapsible">Note Script</button>
+         <div class="content subcontent">
+		   Customer Concern: 
+		   <br><br>
+		   Additional Questions: 
+		   <br><br>
+		   Examples: 
+		   <br><br>
+		   Steps to resolve: 
+		   <br><br>
+		   Resolution provided: 
+         </div>
+      </div>
+      <div class="row">
+         <button class="collapsible">Extra things</button>
+         <div class="content subcontent">
+            <button class="collapsible subcollapsible">↳Email stats, Splunk search formatting, and other information.</button>
+            <div class="content subcontent">
+               <strong>Quick search options</strong> <br><br>Search by app name: inf_appname=""
+               <br><br>Search by subject: subject=""
+               <br><br>			Search by recieving contacts email: recipient=""
+               <br><br>
+               <b>Threshold:</b> 0.1% or 1 complaint per 1,000 emails sent per provider.
+            </div>
+         </div>
+         <div class="content subcontent">
+            <button class="collapsible subcollapsible">↳Chat/Phone Stats</button>
+            <div class="content subcontent">
+               <strong>Issue Res:</strong> 91.0% <br><br>
+               <strong>Outstanding Ex:</strong> 94.0% <br><br>
+               <strong>Phone/Chat ACPH:</strong> 3.64/4.76 <br><br>
+               <strong>Utilization</strong> 90.0%
+            </div>
+         </div>
+      </div>
+      <script src="/js/main.js"></script>
+   </body>
 </html>
