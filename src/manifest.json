@@ -4,7 +4,7 @@
 	"short_name": "wURLin",
 	"description": "Was mearl's URL Input but now it's Jacob.",
 	"icons": { "16": "icon16.png"},
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"author": "Jacob <chrome@iigniteus.com>",
 	"incognito": "split",
 	"chrome_url_overrides": {
