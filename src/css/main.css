@@ -191,3 +191,32 @@ input, select, p {
   display: table;
   clear: both;
 }
+
+.wrap {
+	margin: 0 auto 0 auto;
+	padding: 0 20px;
+	width: 700px;
+	max-width: 100%;
+}
+
+#codeField, #emailField {
+	width: 290px;
+	max-width: 100%;
+}
+
+#emailField {
+	margin-left: 20px;
+}
+
+#URLField {
+	clear: both;
+	width: 600px;
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+#processAction {
+	clear: both;
+	margin-top: 10px;
+	width: 100px;
+	max-width: 100%;
+}

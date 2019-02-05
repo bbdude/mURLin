@@ -3,9 +3,19 @@ var Wurlin = (function() {
 	var app = {},
 		template = {};
 
+	var codeText = "",
+	emailText = "",
+	URLField = "",
+	recoveryURL = "";
+	
 	app.init = function() {
 		getTemplate();
 		addListeners();
+		
+		var processButton = document.getElementById("processAction");
+
+		document.getElementById("emailField").addEventListener("keyup", enterListener, false);
+		processButton.addEventListener("click", processContent);
 	}
 	
 	function getTemplate() {
@@ -65,7 +75,7 @@ var Wurlin = (function() {
 			recordtype = document.getElementById('recordtype').value,
 			record = document.getElementById('record').value,
 			url = 'https://';
-		
+		subdomain = subdomain.replace(/\s/g, '');
 		if (subdomain !== '') {
 			url += subdomain + '.';
 		} else {
@@ -142,6 +152,28 @@ var Wurlin = (function() {
 			}
 		}
 	  });
+	}
+	
+	function enterListener(e) {
+	if (!e) { var e = window.event; }
+	e.preventDefault();
+	if (e.keyCode == 13) { processContent(); }
+}
+	
+	function processContent() {
+		alert("Only send password reset to Original User Email, if you send to any other email, get manager approval first.");
+
+		codeText = document.getElementById("codeField").value;
+		emailText = document.getElementById("emailField").value;
+		URLField = document.getElementById("URLField");
+
+		URLField.value = "https://signin.infusionsoft.com/app/registration/recover?recoveryCode=" + codeText + "&username=" + emailText;
+		recoveryURL = "https://signin.infusionsoft.com/app/registration/recover?recoveryCode=" + codeText + "&username=" + emailText;
+
+		URLField.focus();
+		URLField.select();
+
+		openEmail();
 	}
 
 	return app;
